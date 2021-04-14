@@ -14,11 +14,11 @@ def read_item():
 def put_item():
     return {"method": "POST"}
 
-@app.options()
+@app.options("/method")
 def met_info():
     return {"method": "OPTIONS"}
 
-@app.delete()
+@app.delete("/method")
 def deleting_stuff():
     return {"method": "DELETE"}
 
