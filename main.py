@@ -12,7 +12,7 @@ def read_item():
 
 @app.put("/method")
 def put_item():
-    return {"method": "POST"}
+    return {"method": "PUT"}
 
 @app.options("/method")
 def met_info():
