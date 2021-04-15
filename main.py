@@ -22,10 +22,6 @@ def met_info():
 def deleting_stuff():
     return {"method": "DELETE"}
 
-@app.post("/method")
-def post_item():
-    return {"method": "POST"}
-
 @app.post("/method", status_code=201)
 async def post_item():
     return {"method": "POST"}
